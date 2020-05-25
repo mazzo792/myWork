@@ -1,0 +1,32 @@
+<?php
+
+include_once "dbh.inc.php";
+
+$message = mysqli_real_escape_string($conn, $_POST['message']);
+$name = mysqli_real_escape_string($conn, $_POST['name']);
+$email = mysqli_real_escape_string($conn, $_POST['email']);
+$subject = mysqli_real_escape_string($conn, $_POST['subject']);
+
+$sql = "INSERT INTO users(message, name, email, subject) VALUES('$message', '$name', '$email', '$subject');";
+mysqli_query($conn, $sql);
+
+header("Location: ../contact.php?message=delivered");
+
+$to = 'mazin.ahmed.business@gmail.com'; // replace this mail with yours
+          		$firstname = $_POST["fname"];
+          		$email= $_POST["email"];
+          		$headers = 'MIME-Version: 1.0' . "\r\n";
+          		$headers .= "From: " . $email . "\r\n"; // Sender's E-mail
+          		$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+
+          		$message ='
+'.$firstname.'  '.$laststname.'
+Email: '.$email.'
+';
+
+          		if (@mail($to, $email, $message, $headers))
+          		{
+          			echo 'The message has been sent.';
+          		}else{
+          		echo 'failed';
+          	}
