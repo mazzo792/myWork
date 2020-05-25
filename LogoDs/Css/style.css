@@ -1,0 +1,250 @@
+body{
+	background-color: tomato;
+	font-family: sans-serif;
+
+}
+
+.header{
+	width: 1000px;
+	margin: 0 auto;
+	animation: 1s OpAnim ease;
+}
+
+.logo{
+	margin-left: 20px;
+	float: left;
+	padding-top: 40px;
+}
+
+.logo img{
+	margin-right: 20px;
+	width: 100px;
+	height: 100px;
+}
+
+.logo:hover{
+	transform: scale(1.5, 1.5);
+	transition: 0.4s ease-out;
+}
+
+.menu-button{
+	background-color: transparent;
+	color: #fff;
+	padding: 16px;
+	font-size: 30px;
+	cursor: pointer;
+	border: 1px solid #fff;
+}
+
+.right-menu{
+	padding-top: 50px;
+	position: relative;
+	display: inline-block;
+	float: right;
+	margin-right: 30px;
+}
+
+.dropdown-menu{
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 110px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 2);
+	z-index: 1;
+}
+
+.dropdown-menu a{
+	color: #000;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-menu a:hover{
+	background-color: #000;
+	color: #fff;
+	transition: 0.4s ease-out;
+}
+
+.right-menu:hover .dropdown-menu{
+	display: block;
+}
+
+.right-menu:hover .menu-button{
+	background-color: transparent;
+}
+
+.heading{
+	color: #fff;
+	position: absolute;
+	top: 35%;
+	left: 20%;
+	font-size: 20px;
+	animation: 1s OpAnim ease;
+}
+
+.heading:hover{
+	text-shadow: 0px 8px 16px #000;
+	transform: scale(1.4, 1.4);
+	transition: 0.4s ease-out;
+	cursor: default;
+}
+
+.designs1{
+	position: absolute;
+	top: 65%;
+	left: 25%;
+	font-size: 60px;
+	background-color: transparent;
+	border: 5px solid #fff;
+	color: #fff;
+    cursor: pointer;
+    animation: 01s ScaleAnim ease;
+}
+
+.designs1:hover{
+	box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 2);
+	font-size: 70px;
+	position: absolute;
+	top: 65%;
+	left: 23%;
+	transition: 0.2s ease;
+}
+
+.designs2{
+	position: absolute;
+	top: 65%;
+	left: 60%;
+	font-size: 60px;
+	background-color: transparent;
+	border: 5px solid #fff;
+	color: #fff;
+    cursor: pointer;
+    animation: 1s ScaleAnim ease;
+}
+
+.designs2:hover{
+	box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 2);
+	font-size: 70px;
+	position: absolute;
+	top: 65%;
+	left: 58%;
+	transition: 0.2s ease;
+}
+
+.section .apt{
+	font-size: 30px;
+	color: #fff;
+	position: absolute;
+	top: 40%;
+	left: 20%;
+	cursor: default;
+}
+
+.section .cntct{
+	font-size: 25px;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 13%;
+	animation: 1s OpAnim ease;
+}
+
+.section .cntct:hover{
+	text-shadow: 0px 8px 16px #000;
+	transform: scale(1.4, 1.4);
+	transition: 0.4s ease-out;
+	cursor: default;
+}
+
+.section .cntct2{
+	font-size: 30px;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 65%;
+	animation: 1s OpAnim ease;
+}
+
+.section .cntct2:hover{
+	text-shadow: 0px 8px 16px #000;
+	transform: scale(1.4, 1.4);
+	transition: 0.4s ease-out;
+	cursor: default;
+}
+
+.section .cntct3{
+	font-size: 25px;
+	color: #fff;
+	position: absolute;
+	top: 40%;
+	left: 13%;
+	animation: 1s OpAnim ease;
+}
+
+.section .cntct3:hover{
+	text-shadow: 0px 8px 16px #000;
+	transform: scale(1.4, 1.4);
+	transition: 0.4s ease-out;
+	cursor: default;
+}
+
+.section .cntct4{
+	font-size: 25px;
+	color: #fff;
+	position: absolute;
+	top: 70%;
+	left: 13%;
+	animation: 1s OpAnim ease;
+}
+
+.section .cntct4:hover{
+	text-shadow: 0px 8px 16px #000;
+	transform: scale(1.4, 1.4);
+	transition: 0.4s ease-out;
+	cursor: default;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes ScaleAnim{
+	0%{
+		transform: scale(0, 0);
+		opacity: 0;
+	}
+
+	50%{
+		transform: scale(2, 2);
+		opacity: 0.5;
+	}
+
+	100%{
+		transform: scale(1, 1);
+		opacity: 1;
+	}
+}
+
+@keyframes OpAnim{
+	0%{
+		opacity: 0;
+	}
+
+	50%{
+		opacity: 0.5;
+	}
+
+	100%{
+		opacity: 1;
+	}
+}
